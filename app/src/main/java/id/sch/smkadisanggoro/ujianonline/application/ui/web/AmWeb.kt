@@ -54,7 +54,7 @@ class AmWeb : AmFragment(R.layout.view_web) {
         val async = coroutineScope.async {
             withContext(Dispatchers.Main) {
                 arguments?.getString("urlTarget")?.let {
-                    loadWeb(it)
+                    loadWeb("$it?browser=asexam")
                 }
             }
         }
