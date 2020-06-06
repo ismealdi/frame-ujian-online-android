@@ -8,6 +8,7 @@ import android.webkit.*
 import androidx.activity.addCallback
 import androidx.core.view.isVisible
 import androidx.navigation.fragment.findNavController
+import com.ismealdi.components.hideKeyboard
 import id.sch.smkadisanggoro.ujianonline.R
 import id.sch.smkadisanggoro.ujianonline.application.base.AmFragment
 import id.sch.smkadisanggoro.ujianonline.util.Constants.Preference.BaseUri
@@ -40,14 +41,33 @@ class AmOnBoard : AmFragment(R.layout.view_on_board) {
         }
     }
 
+    @SuppressLint("SetTextI18n")
     override fun listener() {
         super.listener()
 
-        buttonProcess.setOnClickListener {
+        inputUri.setOnFocusChangeListener { v, hasFocus ->
+            if (hasFocus) {
+                val uri = inputUri.text.toString()
+
+                if (uri.isEmpty()) {
+                    inputUri.setText("http://")
+                }
+            }
+        }
+
+        buttonProcess.setOnClickListener { view ->
             val uri = inputUri.text.toString()
+
+            if (!URLUtil.isValidUrl(uri)) {
+                message("Format alamat url salah.")
+
+                return@setOnClickListener
+            }
 
             if (uri.isNotEmpty() && (uri.contains("http://") || uri.contains("https://"))) {
                 Preferences(requireContext(), BaseUri).setString(uri)
+
+                requireContext().hideKeyboard(view)
 
                 val actionDetail = AmOnBoardDirections.actionWeb(
                     urlTarget = uri,
@@ -62,6 +82,7 @@ class AmOnBoard : AmFragment(R.layout.view_on_board) {
                     message("Alamat ujian tidak boleh kosong.")
                 }
             }
+
         }
 
         errorRetry = {

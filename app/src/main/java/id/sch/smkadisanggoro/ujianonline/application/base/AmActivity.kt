@@ -40,7 +40,7 @@ abstract class AmActivity(@LayoutRes var layout: Int) : AppCompatActivity(),
     public var errorRetry: (() -> Unit)? = null
 
     var isBack = true
-    var back: (() -> Unit?)? = null
+    var back: (() -> Any?)? = null
 
     /**
      * Default constructor for AmActivity. to define onCreate

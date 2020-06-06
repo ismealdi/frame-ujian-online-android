@@ -30,18 +30,19 @@ class AmWeb : AmFragment(R.layout.view_web) {
 
         errorRetry = {
             arguments?.getString("urlTarget")?.let {
-                loadWeb("$it?browser=asexam")
+                loadWeb("$it")
             }
         }
 
         requireActivity().onBackPressedDispatcher.addCallback(this) {
-
             if (webView?.canGoBack() == true) {
                 webView?.goBack()
             } else {
                 findNavController().navigateUp()
             }
         }
+
+        handleBack()
 
         pageTitle(arguments?.getString("title") ?: "")
 
@@ -54,10 +55,22 @@ class AmWeb : AmFragment(R.layout.view_web) {
         val async = coroutineScope.async {
             withContext(Dispatchers.Main) {
                 arguments?.getString("urlTarget")?.let {
-                    loadWeb("$it?browser=asexam")
+                    loadWeb("$it")
                 }
             }
         }
+    }
+
+    private fun handleBack() {
+        amActivity?.back = {
+            findNavController().navigateUp()
+        }
+    }
+
+    override fun onResume() {
+        super.onResume()
+
+        handleBack()
     }
 
     @SuppressLint("SetJavaScriptEnabled")
@@ -94,7 +107,7 @@ class AmWeb : AmFragment(R.layout.view_web) {
 
         webView?.isVisible = false
         webView?.settings?.javaScriptEnabled = true
-        webView?.loadUrl(url)
+        webView?.loadUrl("$url?browser=asexam")
         error(false)
         loader(true)
     }
