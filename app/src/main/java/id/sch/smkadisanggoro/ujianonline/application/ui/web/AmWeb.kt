@@ -30,7 +30,7 @@ class AmWeb : AmFragment(R.layout.view_web) {
 
         errorRetry = {
             arguments?.getString("urlTarget")?.let {
-                loadWeb(it)
+                loadWeb("$it?browser=asexam")
             }
         }
 
