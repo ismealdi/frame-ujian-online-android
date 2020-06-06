@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@android:color/transparent"
+    android:gravity="center"
+    android:paddingStart="@dimen/am_activity_horizontal_margin"
+    android:paddingEnd="@dimen/am_activity_horizontal_margin">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_dialog"
+        android:orientation="vertical">
+
+        <com.ismealdi.components.AmTextView
+            app:am_font_style="bold"
+            android:id="@+id/textTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/am_activity_horizontal_margin"
+            android:paddingTop="@dimen/am_activity_horizontal_margin"
+            android:paddingRight="@dimen/am_activity_horizontal_margin"
+            android:paddingBottom="@dimen/am_activity_horizontal_margin_small"
+            android:textSize="@dimen/am_text_normal"
+            android:textColor="@color/colorAmTextPrimary"
+            android:visibility="gone" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/listViewDialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/am_activity_horizontal_margin_small"
+            android:paddingBottom="@dimen/am_activity_horizontal_margin_small"
+            android:background="@android:color/transparent"
+            android:clipToPadding="false"
+            android:isScrollContainer="false"
+            android:nestedScrollingEnabled="false"
+            android:orientation="vertical"
+            android:scrollbars="none"
+            app:reverseLayout="false"
+            tools:listitem="@layout/item_dialog"
+            tools:targetApi="lollipop" />
+    </LinearLayout>
+
+</LinearLayout>

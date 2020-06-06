@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="am_divider">0.8dp</dimen>
+    <dimen name="am_divider_bold">1dp</dimen>
+    <dimen name="am_radius">12dp</dimen>
+    <dimen name="am_radius_input">8dp</dimen>
+    <dimen name="am_radius_small">6dp</dimen>
+
+    <dimen name="am_text_tiny">10sp</dimen>
+    <dimen name="am_text_small">12sp</dimen>
+    <dimen name="am_text_normal">14sp</dimen>
+
+    <dimen name="am_activity_horizontal_margin">18dp</dimen>
+    <dimen name="am_activity_horizontal_margin_tiny">4.5dp</dimen>
+    <dimen name="am_activity_horizontal_margin_small">9dp</dimen>
+    <dimen name="am_activity_vertical_margin_small">8dp</dimen>
+
+    <dimen name="am_component_big">12dp</dimen>
+    <dimen name="am_component_extra_big">20dp</dimen>
+
+</resources>

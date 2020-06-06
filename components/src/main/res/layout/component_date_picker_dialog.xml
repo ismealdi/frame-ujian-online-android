@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:clipToPadding="false">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/am_activity_horizontal_margin"
+        android:layout_marginStart="@dimen/am_component_extra_big"
+        android:layout_marginEnd="@dimen/am_component_extra_big"
+        android:background="@drawable/shape_dialog">
+        <com.ismealdi.components.AmTextView
+            app:am_font_style="bold"
+            android:id="@+id/txt_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/am_text_normal"
+            android:textColor="@color/colorAmTextPrimary"
+            android:gravity="center"
+            android:text="@string/am_text_select_date"
+            android:visibility="visible"/>
+
+        <DatePicker
+            android:id="@+id/datepicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_title"
+            android:layout_centerHorizontal="true"
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner" />
+
+
+        <com.ismealdi.components.AmTextView
+            android:id="@+id/btn_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/datepicker"
+            android:layout_marginEnd="@dimen/am_component_big"
+            android:layout_toStartOf="@id/btn_cancel"
+            android:paddingStart="@dimen/am_activity_horizontal_margin_small"
+            android:paddingTop="@dimen/am_activity_horizontal_margin_tiny"
+            android:paddingEnd="@dimen/am_activity_horizontal_margin_small"
+            android:paddingBottom="@dimen/am_activity_horizontal_margin_tiny"
+            android:text="@string/am_label_yes"
+            android:background="?attr/selectableItemBackground"
+            android:textColor="@color/colorAmPrimaryDark"
+            android:textSize="@dimen/am_text_small"
+            app:am_font_style="bold"
+            app:textAllCaps="true" />
+
+        <com.ismealdi.components.AmTextView
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/datepicker"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:paddingStart="@dimen/am_activity_horizontal_margin_small"
+            android:paddingTop="@dimen/am_activity_horizontal_margin_tiny"
+            android:paddingEnd="@dimen/am_activity_horizontal_margin_small"
+            android:paddingBottom="@dimen/am_activity_horizontal_margin_tiny"
+            android:text="@string/am_label_no"
+            android:background="?attr/selectableItemBackground"
+            android:textColor="@color/colorAmPrimaryDark"
+            android:textSize="@dimen/am_text_small"
+            app:am_font_style="bold"
+            app:textAllCaps="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="0dp"
+    android:gravity="center_horizontal">
+
+    <com.ismealdi.components.AmTextView
+        android:id="@+id/textValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/am_activity_horizontal_margin"
+        android:paddingTop="@dimen/am_activity_vertical_margin_small"
+        android:paddingRight="@dimen/am_activity_horizontal_margin"
+        android:paddingBottom="@dimen/am_activity_vertical_margin_small"
+        android:textColor="@drawable/shape_item_dialog"
+        android:textSize="@dimen/am_text_small" />
+
+</LinearLayout>

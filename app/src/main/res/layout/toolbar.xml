@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/colorToolbar"
+    app:popupTheme="@style/AppTheme">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin">
+
+        <LinearLayout
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/layoutTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+            <com.ismealdi.components.AmTextView
+                android:id="@+id/toolbarSubTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:singleLine="true"
+                android:textColor="@color/colorTextLightHint"
+                android:textSize="@dimen/text_tiny"
+                android:visibility="gone"
+                app:am_font_style="regular"
+                app:am_font_family="Montserrat"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.ismealdi.components.AmTextView
+                android:id="@+id/toolbarTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:singleLine="true"
+                android:textColor="@color/colorTextLight"
+                android:textSize="@dimen/text_medium"
+                android:ellipsize="end"
+                app:am_font_style="medium"
+                app:am_font_family="Montserrat"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/toolbarSubTitle" />
+        </LinearLayout>
+
+        <com.ismealdi.components.AmEditText
+            android:layout_marginTop="@dimen/component_normal"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/imageProfile"
+            android:layout_marginEnd="@dimen/component_medium"
+            android:id="@+id/toolbarSearch"
+            style="@style/AppTheme.Input"
+            android:layout_width="100dp"
+            android:layout_height="@dimen/input_small"
+            android:background="@drawable/input_secondary"
+            android:drawableStart="@drawable/ic_search"
+            android:drawablePadding="@dimen/component_medium"
+            android:hint="@string/text_search"
+            android:textColorHint="@color/colorTextLightHint"
+            android:textColor="@color/colorTextLight"
+            android:textSize="@dimen/text_small" />
+
+        <ImageView
+            android:layout_marginTop="@dimen/component_normal"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?android:selectableItemBackgroundBorderless"
+            android:id="@+id/imageProfile"
+            android:src="@drawable/input_secondary"
+            android:layout_width="@dimen/input_small"
+            android:layout_height="@dimen/input_small"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/toolbarLogo"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+</androidx.appcompat.widget.Toolbar>

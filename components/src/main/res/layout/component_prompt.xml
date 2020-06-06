@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@android:color/transparent"
+    android:gravity="center"
+    android:paddingStart="@dimen/am_activity_horizontal_margin"
+    android:paddingEnd="@dimen/am_activity_horizontal_margin">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_dialog"
+        android:orientation="vertical">
+
+        <com.ismealdi.components.AmTextView
+            app:am_font_style="bold"
+            android:id="@+id/textTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/am_activity_horizontal_margin"
+            android:paddingTop="@dimen/am_activity_horizontal_margin"
+            android:paddingRight="@dimen/am_activity_horizontal_margin"
+            android:textSize="@dimen/am_text_normal"
+            android:textColor="@color/colorAmTextPrimary"
+            android:visibility="visible"/>
+
+        <com.ismealdi.components.AmTextView
+            android:id="@+id/textDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/am_activity_horizontal_margin"
+            android:paddingTop="@dimen/am_activity_horizontal_margin_tiny"
+            android:paddingRight="@dimen/am_activity_horizontal_margin"
+            android:paddingBottom="@dimen/am_activity_horizontal_margin_tiny"
+            android:textSize="@dimen/am_text_small"
+            android:textColor="@color/colorAmTextSecondary"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/am_activity_horizontal_margin"
+            android:paddingTop="@dimen/am_activity_vertical_margin_small"
+            android:gravity="end"
+            android:paddingRight="@dimen/am_activity_horizontal_margin"
+            android:paddingBottom="@dimen/am_activity_vertical_margin_small">
+
+            <com.ismealdi.components.AmTextView
+                android:id="@+id/buttonPositive"
+                app:am_font_style="bold"
+                android:paddingStart="@dimen/am_activity_horizontal_margin_small"
+                android:paddingEnd="@dimen/am_activity_horizontal_margin_small"
+                android:paddingTop="@dimen/am_activity_horizontal_margin_tiny"
+                android:paddingBottom="@dimen/am_activity_horizontal_margin_tiny"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:textAllCaps="true"
+                android:textColor="@color/colorAmPrimaryDark"
+                android:textSize="@dimen/am_text_small"
+                android:text="@string/am_label_yes"/>
+
+            <com.ismealdi.components.AmTextView
+                android:id="@+id/buttonNegative"
+                app:am_font_style="bold"
+                android:gravity="center"
+                android:paddingStart="@dimen/am_activity_horizontal_margin_small"
+                android:paddingEnd="@dimen/am_activity_horizontal_margin_small"
+                android:paddingTop="@dimen/am_activity_horizontal_margin_tiny"
+                android:paddingBottom="@dimen/am_activity_horizontal_margin_tiny"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:textAllCaps="true"
+                android:layout_marginStart="@dimen/am_component_big"
+                android:textColor="@color/colorAmPrimaryDark"
+                android:textSize="@dimen/am_text_small"
+                android:text="@string/am_label_no"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

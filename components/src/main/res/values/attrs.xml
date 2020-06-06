@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AmView">
+        <attr name="am_pin_height" format="integer" />
+        <attr name="am_pin_width" format="integer" />
+        <attr name="am_rating_size" format="integer" />
+        <attr name="am_rating_height" format="integer" />
+        <attr name="am_rating_enable" format="boolean" />
+        <attr name="am_rating_dark" format="boolean" />
+        <attr name="am_font_family">
+            <enum name="Poppins" value="0" />
+            <enum name="Montserrat" value="1" />
+        </attr>
+        <attr name="am_font_style">
+            <enum name="regular" value="0" />
+            <enum name="medium" value="1" />
+            <enum name="medium_italic" value="2" />
+            <enum name="bold" value="3" />
+            <enum name="bold_italic" value="4" />
+            <enum name="italic" value="5" />
+        </attr>
+        <attr name="am_edit_text_style">
+            <enum name="primary" value="0" />
+            <enum name="accent" value="1" />
+            <enum name="secondary" value="2" />
+        </attr>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="activity_horizontal_margin_tiny">4.5dp</dimen>
+    <dimen name="activity_horizontal_margin_small">9dp</dimen>
+    <dimen name="activity_horizontal_margin">18dp</dimen>
+    <dimen name="activity_horizontal_margin_medium">10dp</dimen>
+    <dimen name="activity_horizontal_margin_big">36dp</dimen>
+
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin_small">8dp</dimen>
+    <dimen name="activity_vertical_margin_big">32dp</dimen>
+
+    <dimen name="text_super">44sp</dimen>
+    <dimen name="text_special">24sp</dimen>
+    <dimen name="text_huge">22sp</dimen>
+    <dimen name="text_extra">20sp</dimen>
+    <dimen name="text_big">18sp</dimen>
+    <dimen name="text_medium">16sp</dimen>
+    <dimen name="text_normal">14sp</dimen>
+    <dimen name="text_small">12sp</dimen>
+    <dimen name="text_tiny">10sp</dimen>
+    <dimen name="text_extra_tiny">8sp</dimen>
+
+    <dimen name="component_tiny">2dp</dimen>
+    <dimen name="component_small">4dp</dimen>
+    <dimen name="component_normal">6dp</dimen>
+    <dimen name="component_medium">8dp</dimen>
+    <dimen name="component_big">12dp</dimen>
+    <dimen name="component_extra">16dp</dimen>
+    <dimen name="component_extra_big">20dp</dimen>
+    <dimen name="component_huge">26dp</dimen>
+    <dimen name="component_special">28dp</dimen>
+    <dimen name="component_super">32dp</dimen>
+
+    <dimen name="radius_tiny">4dp</dimen>
+    <dimen name="radius_small">6dp</dimen>
+    <dimen name="radius_normal">12dp</dimen>
+    <dimen name="radius_big">200dp</dimen>
+
+    <dimen name="tab">55dp</dimen>
+
+    <dimen name="input_medium">50dp</dimen>
+    <dimen name="input_normal">40dp</dimen>
+    <dimen name="input_small">30dp</dimen>
+    <dimen name="input_tiny">25dp</dimen>
+
+    <dimen name="loader_small">50dp</dimen>
+
+
+</resources>

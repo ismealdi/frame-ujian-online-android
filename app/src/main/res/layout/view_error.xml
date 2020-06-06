@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgroundPrimary"
+    android:clickable="true"
+    android:focusable="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        style="@style/AppTheme.Parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_dialog"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.500"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.384">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageNoResult"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_error_network" />
+
+        <com.ismealdi.components.AmTextView
+            android:id="@+id/textError"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/component_medium"
+            android:text="@string/text_sorry_sad"
+            app:am_font_style="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imageNoResult"
+            tools:ignore="RtlHardcoded" />
+
+        <com.ismealdi.components.AmTextView
+            android:id="@+id/textErrorDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_something_went_wrong"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textError"
+            tools:ignore="RtlHardcoded" />
+
+        <com.ismealdi.components.AmButton
+            android:id="@+id/buttonRetryNoNetwork"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="@dimen/component_big"
+            android:background="@drawable/button_fill_primary"
+            android:drawablePadding="@dimen/component_small"
+            android:gravity="center"
+            android:padding="@dimen/component_medium"
+            android:text="@string/text_retry"
+            android:textAllCaps="false"
+            android:textColor="@color/colorTextLight"
+            android:textSize="@dimen/text_tiny"
+            app:am_font_style="medium"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textErrorDescription" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

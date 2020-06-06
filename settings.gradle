@@ -1,0 +1,4 @@
+include ':components'
+include ':app'
+
+rootProject.name = "Ujian Online Adi Sanggoro"

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#309B25</color>
+    <color name="colorPrimaryDark">#2F871A</color>
+    <color name="colorAccent">#fb264e</color>
+
+    <color name="colorToolbar">#309B25</color>
+
+    <color name="colorBackgroundPrimary">#f2f2f2</color>
+    <color name="colorBackgroundSecondary">#fff</color>
+    <color name="colorBackgroundThird">#fefefe</color>
+
+    <color name="colorTextAccent">#309B25</color>
+    <color name="colorTextPrimary">#101010</color>
+    <color name="colorTextSecondary">#727272</color>
+    <color name="colorTextPressed">#000000</color>
+    <color name="colorTextDisabled">#C9505050</color>
+    <color name="colorTextLight">#FFF</color>
+    <color name="colorTextLightHint">#E5E5E5</color>
+
+    <color name="colorButtonPrimary">#309B25</color>
+    <color name="colorButtonPrimaryPressed">#2F871A</color>
+    <color name="colorButtonPrimaryDisabled">#DADADA</color>
+
+
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAmPrimary">#0c3360</color>
+    <color name="colorAmPrimaryDark">#0f2b53</color>
+
+    <color name="colorAmToast">#DCFFFFFF</color>
+    <color name="colorAmInputPrimary">#FFFFFF</color>
+    <color name="colorAmInputPrimaryPressed">#F3F3F3</color>
+    <color name="colorAmInputPrimaryDisabled">#CACACA</color>
+
+    <color name="colorAmInputSecondary">#254772</color>
+    <color name="colorAmInputSecondaryPressed">#214068</color>
+    <color name="colorAmInputSecondaryDisabled">#40536A</color>
+
+    <color name="colorAmBackgroundDialog">#FFF</color>
+    <color name="colorAmDivider">#F4F4F4</color>
+    <color name="colorAmTextLight">#FFF</color>
+
+    <color name="colorAmTextAccent">#0c3360</color>
+    <color name="colorAmTextPrimary">#101010</color>
+    <color name="colorAmTextSecondary">#727272</color>
+    <color name="colorAmTextPressed">#000000</color>
+    <color name="colorAmTextDisabled">#C9505050</color>
+    <color name="colorAmError">#db284e</color>
+</resources>

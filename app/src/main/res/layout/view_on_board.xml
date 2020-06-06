@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/AppTheme.Parent"
+    android:background="@color/colorBackgroundPrimary">
+
+    <com.ismealdi.components.AmTextView
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/labelInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorTextPrimary"
+        android:textSize="@dimen/text_tiny"
+        app:am_font_style="medium"
+        app:am_font_family="Poppins"
+        android:text="@string/alamat_ip_domain"/>
+
+    <com.ismealdi.components.AmEditText
+        android:drawableStart="@drawable/ic_internet"
+        android:drawablePadding="@dimen/component_medium"
+        android:layout_marginTop="@dimen/component_small"
+        app:layout_constraintTop_toBottomOf="@id/labelInput"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        style="@style/AppTheme.Input"
+        android:background="@drawable/input_primary"
+        android:id="@+id/inputUri"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/input_normal"
+        android:imeOptions="actionDone"
+        android:inputType="textUri"
+        android:maxLines="1"
+        android:hint="@string/text_hint_url"
+        android:paddingEnd="100dp"
+        android:singleLine="true"
+        android:textSize="@dimen/text_small" />
+
+    <com.ismealdi.components.AmButton
+        app:layout_constraintTop_toTopOf="@id/inputUri"
+        app:layout_constraintBottom_toBottomOf="@id/inputUri"
+        app:layout_constraintEnd_toEndOf="@id/inputUri"
+        android:layout_marginEnd="@dimen/component_small"
+        style="@style/AppTheme.Input"
+        app:am_font_style="medium"
+        android:background="@drawable/button_fill_primary"
+        android:id="@+id/buttonProcess"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/input_small"
+        android:imeOptions="actionDone"
+        android:textAllCaps="true"
+        android:textColor="@color/colorTextLight"
+        android:text="@string/text_process"
+        android:textSize="@dimen/text_small" />
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        app:layout_constraintTop_toBottomOf="@id/inputUri"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_dialog"
+        android:orientation="vertical"
+        style="@style/AppTheme.Parent">
+        <com.ismealdi.components.AmTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:am_font_style="medium"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/text_normal"
+            android:layout_marginBottom="@dimen/component_medium"
+            app:am_font_family="Poppins"
+            android:text="@string/informasi"/>
+
+        <com.ismealdi.components.AmTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/text_tiny"
+            android:text="@string/jika_handphone_di_kunci_mati_aplikasi_otomatis_berhenti"/>
+
+        <com.ismealdi.components.AmTextView
+            android:layout_marginTop="@dimen/component_tiny"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/text_tiny"
+            android:text="@string/aplikasi_tidak_dapat_berjalan_di_background_thread"/>
+
+        <com.ismealdi.components.AmTextView
+            android:layout_marginTop="@dimen/component_tiny"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/text_tiny"
+            android:text="@string/home_button_pada_perangkat_berfungsi_untuk_menghentikan_aplikasi"/>
+
+        <com.ismealdi.components.AmTextView
+            android:layout_marginTop="@dimen/component_tiny"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/text_tiny"
+            android:text="@string/recent_button_pada_perangkat_tidak_berfungsi_semestinya_aplikasi_tidak_dapat_berjalan_di_background"/>
+
+        <com.ismealdi.components.AmTextView
+            android:layout_marginTop="@dimen/component_tiny"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/text_tiny"
+            android:text="@string/harap_gunakan_aplikasi_dan_laksanakan_ujian_dengan_bijak"/>
+
+    </LinearLayout>
+
+
+    <com.ismealdi.components.AmTextView
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/labelCopy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:am_font_style="regular"
+        android:textColor="@color/colorTextPrimary"
+        android:textSize="@dimen/text_tiny"
+        android:text="@string/text_copy"/>
+
+    <include
+        android:id="@+id/layoutLoader"
+        layout="@layout/view_loader"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/layoutError"
+        layout="@layout/view_error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

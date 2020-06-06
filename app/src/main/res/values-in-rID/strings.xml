@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Adi Sanggoro Ujian Online</string>
+    <string name="text_search">Cari</string>
+    <string name="text_sorry_sad">Maaf ;(</string>
+    <string name="text_something_went_wrong">Terjadi kesalahan</string>
+    <string name="text_retry">Coba Lagi</string>
+    <string name="title_main">Main</string>
+    <string name="text_hint_url">Masukan Alamat IP/Domain</string>
+    <string name="text_process">Proses</string>
+    <string name="text_ujian">Ujian</string>
+    <string name="text_smk_adi_sanggoro">SMK Adi Sanggoro</string>
+    <string name="text_ujian_online">Ujian Online</string>
+    <string name="text_copy">© 2020 Al (@ismealdi)</string>
+    <string name="alamat_ip_domain">Alamat IP/Domain</string>
+    <string name="informasi">Informasi</string>
+    <string name="jika_handphone_di_kunci_mati_aplikasi_otomatis_berhenti">Harap gunakan aplikasi dan laksanakan ujian dengan bijak</string>
+    <string name="aplikasi_tidak_dapat_berjalan_di_background_thread">Aplikasi tidak dapat berjalan di background thread</string>
+    <string name="home_button_pada_perangkat_berfungsi_untuk_menghentikan_aplikasi">Home Button pada perangkat berfungsi untuk menghentikan aplikasi</string>
+    <string name="recent_button_pada_perangkat_tidak_berfungsi_semestinya_aplikasi_tidak_dapat_berjalan_di_background">Recent Button pada perangkat tidak berfungsi semestinya, aplikasi tidak dapat berjalan di background</string>
+    <string name="harap_gunakan_aplikasi_dan_laksanakan_ujian_dengan_bijak">Harap gunakan aplikasi dan melaksanakan ujian dengan bijak</string>
+</resources>

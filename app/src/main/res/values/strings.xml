@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Adi Sanggoro Online Exams</string>
+    <string name="text_search">Search</string>
+    <string name="text_sorry_sad">Sorry ;(</string>
+    <string name="text_something_went_wrong">Something went wrong</string>
+    <string name="text_retry">Retry</string>
+    <string name="title_main">Main</string>
+    <string name="text_hint_url">Enter Web IP Address / Domain</string>
+    <string name="text_process">Process</string>
+    <string name="text_ujian">Exam</string>
+    <string name="text_ujian_online">Online Exams</string>
+    <string name="text_smk_adi_sanggoro">SMK Adi Sanggoro</string>
+    <string name="text_copy">"© 2020 Al (@ismealdi)"</string>
+    <string name="alamat_ip_domain">IP Address / Domain</string>
+    <string name="informasi">Information</string>
+    <string name="jika_handphone_di_kunci_mati_aplikasi_otomatis_berhenti">If the phone is locked / turned off the application automatically stops</string>
+    <string name="aplikasi_tidak_dapat_berjalan_di_background_thread">The application cannot run in the background thread</string>
+    <string name="home_button_pada_perangkat_berfungsi_untuk_menghentikan_aplikasi">Home Button on the device serves to stop the application</string>
+    <string name="recent_button_pada_perangkat_tidak_berfungsi_semestinya_aplikasi_tidak_dapat_berjalan_di_background">Recent Button on the device does not work properly, the application cannot run in the background</string>
+    <string name="harap_gunakan_aplikasi_dan_laksanakan_ujian_dengan_bijak">Please use the application and carry out the test wisely</string>
+</resources>
