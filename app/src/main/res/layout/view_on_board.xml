@@ -111,6 +111,14 @@
             android:textSize="@dimen/text_tiny"
             android:text="@string/harap_gunakan_aplikasi_dan_laksanakan_ujian_dengan_bijak"/>
 
+        <com.ismealdi.components.AmTextView
+            android:id="@+id/labelVersion"
+            android:layout_marginTop="@dimen/component_super"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/text_extra_tiny"/>
+
     </LinearLayout>
 
 

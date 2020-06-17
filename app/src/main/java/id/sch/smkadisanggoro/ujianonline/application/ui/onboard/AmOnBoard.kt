@@ -9,6 +9,7 @@ import androidx.activity.addCallback
 import androidx.core.view.isVisible
 import androidx.navigation.fragment.findNavController
 import com.ismealdi.components.hideKeyboard
+import id.sch.smkadisanggoro.ujianonline.BuildConfig
 import id.sch.smkadisanggoro.ujianonline.R
 import id.sch.smkadisanggoro.ujianonline.application.base.AmFragment
 import id.sch.smkadisanggoro.ujianonline.util.Constants.Preference.BaseUri
@@ -31,6 +32,9 @@ class AmOnBoard : AmFragment(R.layout.view_on_board) {
         layoutPageLoader = layoutLoader
         layoutPageError = layoutError
         setBaseUri()
+
+        val isDebug = if(BuildConfig.DEBUG) "Debug" else "Production"
+        labelVersion?.text = "Version $isDebug ${BuildConfig.VERSION_NAME} (${BuildConfig.VERSION_CODE})"
     }
 
     private fun setBaseUri() {
